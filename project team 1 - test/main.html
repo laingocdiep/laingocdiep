@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Review</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <style>
+        html {
+           background-image: url(images/background_image.jpg);
+           -webkit-background-size: cover;  
+           -moz-background-size: cover;  
+           -o-background-size: cover;  
+           background-size: cover;  
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+        }
+        body {
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: lightyellow;
+        }
+        #quiz {
+            padding-top: 1%;
+            padding-bottom: 10px;    
+        }
+        .question {
+            font-size: 20px;
+            padding-top: 20px;
+            padding-bottom: 5px;
+            margin: 1% 1% 1% 1%;
+        }
+        button {
+            background-color: lightblue;
+            font-size: 15px;
+            border-radius: 5px;
+            padding: 8px 10px 8px 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        #other {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ol><div id="quiz"></div></ol>
+    </div>
+    <button id="submit">Nộp bài</button>
+    <div id="results"></div>
+    <div id="other"></div>
+
+    
+    <script src="questions.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

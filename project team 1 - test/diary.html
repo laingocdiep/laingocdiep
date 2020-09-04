@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Review</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <style>
+        html {
+           background-image: url(images/background_image.jpg);
+           -webkit-background-size: cover;  
+           -moz-background-size: cover;  
+           -o-background-size: cover;  
+           background-size: cover;  
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+        }
+        body {
+            color: whitesmoke;
+            font-size: 25px;
+            margin-left: 2%;
+            margin-right: 40%;
+            margin-top: 1%;
+        }
+        button {
+            background-color: lightblue;
+            font-size: 15px;
+            border-radius: 5px;
+            padding: 8px 10px 8px 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick='location.href="home.html"'>Quay lại trang chủ</button>
+        <button onclick='location.href="main.html"'>Làm đề</button>
+    </div>
+   
+    <center><h1 style="color: whitesmoke;"><strong>Viết bất kì điều gì bạn muốn...</strong></h1></center>
+  <div class="w-75">
+    <form class="form-group" style="padding: 2px 0px 2px 200px;">
+      <textarea class="form-control" type="text" id="txt_comment" rows="5" cols="50" placeholder="Viết gì đi..." width="100"></textarea>
+      <button type="button" class="btn btn-primary" style onclick="display()">Post</button>
+    </form>
+  </div>
+  <div id="display" style="padding: 1% 2% 1% 2%;"></div>
+  
+  <script src="diary.js"></script>
+</body>
+</html>

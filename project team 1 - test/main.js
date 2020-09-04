@@ -18,7 +18,7 @@ function buildQuiz(){
 
         // ...add an HTML radio button
         answers.push(
-          `<label>
+          `<label style="padding-left: 1%; padding-right: 5%;">
             <input type="radio" name="question${questionNumber}" value="${letter}">
             ${letter}. ${currentQuestion.answers[letter]}
           </label>`
@@ -27,7 +27,7 @@ function buildQuiz(){
 
       // add this question and its answers to the output
       output.push(
-        `<div class="question"> ${currentQuestion.question} </div>
+        `<li> <div class="question"> <strong>${currentQuestion.question}</strong> </div> </li>
         <div class="answers"> ${answers.join('')} </div>`
       );
     }
@@ -68,7 +68,11 @@ function showResults(){
     });
       
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `Your score: ${numCorrect}/${questionsDisplayed.length}`;
+    resultsContainer.innerHTML = `Kết quả của bạn: ${numCorrect}/${questionsDisplayed.length}`;
+    document.getElementById("other").innerHTML = 
+    `<button onclick='location.href="main.html"'>Làm đề khác</button>
+    <button onclick='location.href="diary.html"'>Viết nhật kí</button>
+    <button onclick='location.href="home.html"'>Quay lại trang chủ</button>`;
 }
 
 // display quiz right away
